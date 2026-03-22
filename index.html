@@ -25,6 +25,7 @@
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -285,6 +286,46 @@
                 </div>
             </section>
 
+            <!--===== CERTIFICATIONS =====-->
+            <section class="certifications section" id="certifications">
+                <h2 class="section-title">Certifications & Courses</h2>
+
+                <div class="certifications__container">
+                    <div class="certifications__grid">
+                        <!-- Example Certification Cards - Replace with actual data -->
+                        <div class="certification__card" data-image="assets/img/cert1.jpg" data-link="https://internalapp.nptel.ac.in/NOC/NOC25/SEM2/Ecertificates/106/noc25-cs91/Course/NPTEL25CS91S45870016010699083.pdf">
+                            <div class="certification__content">
+                                <h3 class="certification__name">Introduction to Machine Learning</h3>
+                                <p class="certification__issuer">NPTEL - Elite</p>
+                            </div>
+                            <div class="certification__icon">
+                                <i class='bx bx-link-external'></i>
+                            </div>
+                        </div>
+
+                        <div class="certification__card" data-image="assets/img/cert2.jpeg" data-link="https://www.coursera.org/account/accomplishments/verify/5V5HTLTAYJG5?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">
+                            <div class="certification__content">
+                                <h3 class="certification__name">The Bits and Bytes of Computer Networking</h3>
+                                <p class="certification__issuer">Coursera - Google</p>
+                            </div>
+                            <div class="certification__icon">
+                                <i class='bx bx-link-external'></i>
+                            </div>
+                        </div>
+
+                        <div class="certification__card" data-image="assets/img/cert3.jpeg" data-link="https://www.coursera.org/account/accomplishments/verify/YJJIE8GZVPA4?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">
+                            <div class="certification__content">
+                                <h3 class="certification__name">Introduction to Hardware and Operating Systems</h3>
+                                <p class="certification__issuer">Coursera -IBM</p>
+                            </div>
+                            <div class="certification__icon">
+                                <i class='bx bx-link-external'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Modal -->
             <div id="results-modal" class="modal">
                 <div class="modal-overlay"></div>
@@ -311,6 +352,18 @@
                         <img src="assets/res/CPU/1.png" alt="CPU Scheduler Interface" class="modal-image">
                         <!-- <img src="assets/res/cpu/cpu_scheduler_2.png" alt="Algorithm Comparison" class="modal-image">
                         <img src="assets/res/cpu/cpu_scheduler_3.png" alt="Performance Metrics" class="modal-image"> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate Modal -->
+            <div id="certificate-modal" class="modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content certificate-modal-content">
+                    <span class="modal-close">&times;</span>
+                    <h3 id="certificate-modal-title">Certificate</h3>
+                    <div class="certificate-modal-image">
+                        <img id="certificate-image" src="" alt="Certificate" class="modal-certificate-image">
                     </div>
                 </div>
             </div>

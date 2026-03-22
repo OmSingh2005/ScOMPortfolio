@@ -73,6 +73,9 @@ sr.reveal('.skills__learning', {delay: 300});
 // Work/Projects section: staggered card animations
 sr.reveal('.work__card', {interval: 150});
 
+// Certifications section: staggered card animations
+sr.reveal('.certification__card', {interval: 150});
+
 // Contact section: contact cards and CTA button
 sr.reveal('.contact__card', {interval: 100});
 sr.reveal('.contact__highlight', {delay: 300}); 
@@ -130,5 +133,72 @@ cpuOverlay.onclick = function() {
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape' && cpuModal.style.display === 'block') {
         cpuModal.style.display = 'none';
+    }
+});
+
+/*===== CERTIFICATE MODAL =====*/
+const certificateModal = document.getElementById('certificate-modal');
+const certificateImage = document.getElementById('certificate-image');
+const certificateModalTitle = document.getElementById('certificate-modal-title');
+const certificateCloseBtn = certificateModal.querySelector('.modal-close');
+const certificateOverlay = certificateModal.querySelector('.modal-overlay');
+
+// Function to open certificate modal
+function openCertificateModal(imageSrc, title) {
+    certificateImage.src = imageSrc;
+    certificateImage.alt = title;
+    certificateModalTitle.textContent = title;
+    certificateModal.style.display = 'block';
+}
+
+// Function to close certificate modal
+function closeCertificateModal() {
+    certificateModal.style.display = 'none';
+}
+
+// Add event listeners to certification cards
+document.addEventListener('DOMContentLoaded', function() {
+    const certificationCards = document.querySelectorAll('.certification__card');
+    
+    certificationCards.forEach(card => {
+        const cardElement = card;
+        const iconElement = card.querySelector('.certification__icon');
+        const imageSrc = card.dataset.image;
+        const linkUrl = card.dataset.link;
+        const title = card.querySelector('.certification__name').textContent;
+        
+        // Card click - open modal
+        cardElement.addEventListener('click', function(e) {
+            // Prevent modal if icon was clicked
+            if (e.target.closest('.certification__icon')) {
+                return;
+            }
+            openCertificateModal(imageSrc, title);
+        });
+        
+        // Icon click - open external link
+        if (iconElement) {
+            iconElement.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent card click
+                window.open(linkUrl, '_blank');
+            });
+        }
+    });
+});
+
+// Close certificate modal
+certificateCloseBtn.onclick = function() {
+    closeCertificateModal();
+}
+
+// Close certificate modal when clicking outside
+certificateOverlay.onclick = function() {
+    closeCertificateModal();
+}
+
+// Close certificate modal on ESC key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && certificateModal.style.display === 'block') {
+        closeCertificateModal();
     }
 });
