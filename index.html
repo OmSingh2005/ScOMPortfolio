@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Om Singh Chauhan</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__content">
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm <span class="home__title-color">Om</span><br> Aspiring Data Analyst</h1>
+                        <div class="home__buttons">
+                            <a href="#contact" class="button">Contact</a>
+                            <a href="assets/12306945.pdf" class="button button--outline" download>Download CV</a>
+                        </div>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://linkedin.com/in/om-singh-chauhan1569/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                        <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
+                        <a href="https://github.com/OmSingh2005" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    </div>
+                </div>
+
+                <!-- <div class="home__quick">
+                    <h3 class="home__quick-title">Quick Info</h3>
+                    <ul class="home__quick-list">
+                        <li><span class="home__quick-dot"></span>CSE student exploring data and backend</li>
+                        <li><span class="home__quick-dot"></span>Building small projects to learn by doing</li>
+                        <li><span class="home__quick-dot"></span>Improving problem-solving through DSA</li>
+                    </ul>
+                </div> -->
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/me.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+                
+                <div class="about__header">
+                    <div class="about__image-wrapper">
+                        <img src="assets/img/ENPF.png" alt="Profile Photo" class="about__image">
+                    </div>
+                    <div class="about__text-wrapper">
+                        <p class="about__description">I'm a computer science student focused on building practical skills through projects, problem solving, and consistent learning. I aim to understand systems deeply rather than just using tools.</p>
+                    </div>
+                </div>
+            
+
+                <div class="about__container bd-grid">
+                    <div class="about__group">
+                        <h3 class="about__group-title">What I do</h3>
+                        <div class="about__grid">
+                            <div class="about__tile">
+                                <h4>Data Analysis</h4>
+                                <p>Work with real datasets to extract patterns and generate useful insights.</p>
+                            </div>
+                            <div class="about__tile">
+                                <h4>ML Models</h4>
+                                <p>Build with ML models to understand predictions and feature impact.</p>
+                            </div>
+                            <div class="about__tile">
+                                <h4>Problem Solving</h4>
+                                <p>Practice structured problem solving to improve logic, efficiency, and thinking approach</p>
+                            </div>
+                            <div class="about__tile">
+                                <h4>Dashboard Development</h4>
+                                <p>Designing dashboards to visualize data and support decision making.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__group">
+                        <h3 class="about__group-title">What I’m aiming for</h3>
+                        <div class="about__grid">
+                            <div class="about__tile">
+                                <h4>Big Data Systems</h4>
+                                <p>Understand how large-scale data pipelines and processing systems work.</p>
+                            </div>
+                            <div class="about__tile">
+                                <h4>Backend Development</h4>
+                                <p>Strengthen backend skills to build scalable and efficient applications.</p>
+                            </div>
+                            <div class="about__tile">
+                                <h4>APIs & System Design</h4>
+                                <p>Design and implement robust APIs and scalable system architectures.</p>
+                            </div>
+                            <div class="about__tile">
+                                <h4>Applied AI / GenAI</h4>
+                                <p>Explore the application of artificial intelligence and generative AI in real-world scenarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div class="skills__content">
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">I’m focused on improving my problem-solving skills and building practical projects while exploring backend development and data-related tools.</p>
+                        <div class="skills__grid">
+                            <div class="skill__card">
+                                <i class='bx bx-code skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skill__card">
+                                <i class='bx bx-terminal skills__icon'></i>
+                                <span class="skills__name">Java</span>
+                            </div>
+                            <div class="skill__card">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skill__card">
+                                <i class='bx bx-data skills__icon'></i>
+                                <span class="skills__name">SQL</span>
+                            </div>
+                            <div class="skill__card">
+                                <i class='bx bx-table skills__icon'></i>
+                                <span class="skills__name">Excel</span>
+                            </div>
+                            <div class="skill__card">
+                                <i class='bx bx-pie-chart skills__icon'></i>
+                                <span class="skills__name">Power BI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills__learning">
+                        <h2 class="skills__learning-title">Currently Learning</h2>
+                        <ul class="skills__learning-list">
+                            <li><strong>Data Structures and Algorithms</strong><br><small>Problem Solving</small></li>
+                            <li><strong>Backend Basics</strong><br><small>Flask, FastAPI</small></li>
+                            <li><strong>Big Data Tools</strong><br><small>Hadoop, Spark</small></li>
+                            <li><strong>Version Control with Git</strong><br><small>Branching, Collaboration</small></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container">
+                    <div class="work__grid">
+
+                        <div class="work__card">
+                            <h3>Intelligent CPU Scheduler Simulator</h3>
+                            <p>A practical CPU scheduling simulation tool with real-time visualization and heuristic suggestions for various scheduling algorithms</p>
+                            <div class="work__tags">
+                                <span>Python</span>
+                                <span>tkinter</span>
+                                <span>Pandas</span>
+                                <span>Matplotlib</span>
+                            </div>
+                            <div class="work__buttons">
+                                <a href="https://github.com/OmSingh2005/The-Intelligent-CPU-Scheduler-Simulator" target="_blank" rel="noopener" class="button">View Code</a>
+                                <button class="button button--secondary" style="border: none;font-size: 15px;" id="cpu-results-btn">View Results</button>
+                            </div>
+                        </div>
+
+                        <div class="work__card">
+                            <h3>Bike Rental Trends and Forecasting</h3>
+                            <p> Exploratory Data Analysis (EDA) to uncover usage patterns and factors affecting bike rentals, followed by a regression-based prediction model to forecast future demand.</p>
+                            <div class="work__tags">
+                                <span>Excel</span>
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>EDA</span>
+                            </div>
+                            <div class="work__buttons">
+                                <a href="https://github.com/OmSingh2005/Bike-Rental-Trends-and-Forecasting" class="button">View Code</a>
+                                <a href="https://colab.research.google.com/drive/1mr--fZxLWC5kLSAfcRRKxxGrBRkbo63X?usp=sharing" target="_blank" rel="noopener" class="button button--secondary">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="work__card">
+                            <h3>Yield Forecasting Model</h3>
+                            <p>Machine learning–based crop yield prediction using global climate data, with SHAP-based explainability and time-aware evaluation.</p>
+                            <div class="work__tags">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Scikit-learn</span>
+                                <span>SHAP XAI</span>
+                                
+                            </div>
+                            <div class="work__buttons">
+                                <a href="https://github.com/OmSingh2005/climate-informed-crop-yield-prediction" target="_blank" rel="noopener" class="button">View Code</a>
+                                <button class="button button--secondary" style="border: none; font-size: 15px;" id="view-results-btn">View Results</button>
+                            </div>
+                        </div>
+                        
+                        <div class="work__card">
+                            <h3>Youtube Trend Analysis</h3>
+                            <p>Interactive dashboard analyzing Youtube trends and performance metrics using Power BI.</p>
+                            <div class="work__tags">
+                                <span>Power BI</span>
+                                <span>Kaggle-API</span>
+                                <span>DAX</span>
+                                
+                            </div>
+                            <div class="work__buttons">
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7406124879860842496/" target="_blank" rel="noopener" class="button">View Dashboard</a>
+                            </div>
+                        </div>
+
+                        
+                        <!-- <div class="work__card">
+                            <h3>HR Analytics Dashboard</h3>
+                            <p>Employee performance and retention analysis with interactive Excel dashboards.</p>
+                            <div class="work__tags">
+                                <span>Excel</span>
+                                <span>VBA</span>
+                                <span>Power Query</span>
+                            </div>
+                            <div class="work__buttons">
+                                <a href="#" class="button">View Code</a>
+                                <a href="#" class="button button--secondary">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="work__card">
+                            <h3>Data Pipeline Automation</h3>
+                            <p>Automated ETL pipeline for processing large datasets with error handling.</p>
+                            <div class="work__tags">
+                                <span>Python</span>
+                                <span>Airflow</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="work__buttons">
+                                <a href="#" class="button">View Code</a>
+                            </div>
+                        </div> -->
+
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modal -->
+            <div id="results-modal" class="modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+                    <h3>Climate Informed Crop Yield Results</h3>
+                    <div class="modal-grid">
+                        <img src="assets/res/ML shap/shap_summary_global.png" alt="Yield Prediction Model" class="modal-image">
+                        <img src="assets/res/ML shap/shap_dependence_t2m.png" alt="Climate Data Analysis" class="modal-image">
+                        <img src="assets/res/ML shap/shap_dependence_precip.png" alt="Accuracy Metrics" class="modal-image">
+                        <img src="assets/res/ML shap/shap_dependence_lag_yield.png" alt="Feature Importance" class="modal-image">
+                        <img src="assets/res/ML shap/actual_vs_predicted_2013_2023.png" alt="Validation Results" class="modal-image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CPU Scheduler Modal -->
+            <div id="cpu-modal" class="modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+                    <h3>Intelligent CPU Scheduler Simulator Results</h3>
+                    <div class="modal-grid">
+                        <img src="assets/res/CPU/1.png" alt="CPU Scheduler Interface" class="modal-image">
+                        <!-- <img src="assets/res/cpu/cpu_scheduler_2.png" alt="Algorithm Comparison" class="modal-image">
+                        <img src="assets/res/cpu/cpu_scheduler_3.png" alt="Performance Metrics" class="modal-image"> -->
+                    </div>
+                </div>
+            </div>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                
+                <div class="contact__wrapper">
+                    <!-- <p class="contact__description">Let’s connect! I’m always open to meaningful work, collaborations, and new opportunities.</p> -->
+                    <div class="contact__cards">
+                        <div class="contact__card">
+                            <i class='bx bx-envelope contact__icon'></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:oms1ngho2005@gmail.com">oms1ngho2005@gmail.com</a></p>
+                        </div>
+                        <div class="contact__card">
+                            <i class='bx bxl-github contact__icon'></i>
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/OmSingh2005" target="_blank">github.com/OmSingh2005</a></p>
+                        </div>
+                        <div class="contact__card">
+                            <i class='bx bxl-linkedin-square contact__icon'></i>
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://linkedin.com/in/om-singh-chauhan1569/" target="_blank">linkedin.com/om-singh-chauhan1569</a></p>
+                        </div>
+                        <div class="contact__card">
+                            <i class='bx bx-map contact__icon'></i>
+                            <h3>Jalandhar, Punjab</h3>
+                            <p>Open to opportunities • Remote / Hybrid</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__highlight">
+                        <h3>Let’s work together</h3>
+                        <p>Available for projects in analytics, data engineering, and reporting. Feel free to reach out and we can build something impactful.</p>
+                        <a href="mailto:oms1ngho2005@gmail.com?subject=Contact from Portfolio&body=Hi, I saw your portfolio..." class="button contact__cta">Talk to Me</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Om Singh Chauhan</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; ScOM. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
